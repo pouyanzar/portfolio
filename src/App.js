@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Menu />
       <Aboutme/>
-      <BackToTop showAt={100} speed={1500}  easing="easeInOutQuint" ><img src="/pic/top.jpg" className="top"/></BackToTop>
+      <BackToTop showAt={100} speed={1500}  easing="easeInOutQuint" ><img src="/pic/top.jpg" className="top" alt="top-button"/></BackToTop>
       <Skills/>
       <Projects/>
       <Footer/>
