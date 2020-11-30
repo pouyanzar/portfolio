@@ -4,6 +4,12 @@ import Projectviewer from './Projectviewer';
 class Projects extends Component{
     state = {
         projects:[
+            {
+                name:"ToDoList",
+                desc:"Responsive to do list app using React and Bootstrap",
+                link:"https://github.com/pouyanzar/https://project-todolist-1.netlify.app/",
+                pic:"/pic/todolist.png"
+            },
            
             {
                 name:"BrainFlix",
