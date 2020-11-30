@@ -7,9 +7,10 @@ class Projects extends Component{
             {
                 name:"ToDoList",
                 desc:"Responsive to do list app using React and Bootstrap",
-                link:"https://github.com/pouyanzar/https://project-todolist-1.netlify.app/",
+                link:"https://project-todolist-1.netlify.app/",
                 pic:"/pic/todolist.png"
             },
+           
             {
                 name:"BrainFlix",
                 desc:"Responsive cloned YouTube using React, Node.js, API functions",
@@ -25,7 +26,7 @@ class Projects extends Component{
             {
                 name: "Inventory",
                 desc:"As a member of a collaborative project, a warehouse designed with the possibility of adding, sorting, deleting branches, users, and items. The developers communicated via GitHub and Jira",
-                link:"https://github.com/pouyanzar/inventory",
+                link:"https://inventap.herokuapp.com",
                 pic:"/pic/inventorySC.png"
             },
             {
