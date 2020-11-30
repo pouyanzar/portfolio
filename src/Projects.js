@@ -7,7 +7,7 @@ class Projects extends Component{
             {
                 name:"ToDoList",
                 desc:"Responsive to do list app using React and Bootstrap",
-                link:"https://github.com/pouyanzar/https://project-todolist-1.netlify.app/",
+                link:"https://project-todolist-1.netlify.app/",
                 pic:"/pic/todolist.png"
             },
            
