@@ -18,9 +18,9 @@ class Projects extends Component{
                 pic:"/pic/brainflixSC.png"
             },
             {
-                name:"RecipeFinder",
-                desc:"Responsive receipe search engine using React, Node.js, food2fork website's APIs",
-                link:"https://github.com/pouyanzar/recipefinder",
+                name:"FoodFinder",
+                desc:"Responsive receipe search engine using React, Node.js, edamam website's APIs",
+                link:"https://github.com/pouyanzar/foodfinder",
                 pic:"/pic/receipeSC.png"
             },
             {
