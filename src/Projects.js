@@ -20,7 +20,7 @@ class Projects extends Component{
             {
                 name:"FoodFinder",
                 desc:"Responsive receipe search engine using React, Node.js, edamam website's APIs",
-                link:"https://github.com/pouyanzar/foodfinder",
+                link:"https://modest-booth-b055ca.netlify.app/",
                 pic:"/pic/receipeSC.png"
             },
             {
