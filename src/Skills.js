@@ -19,14 +19,15 @@ export default class Skills extends Component{
     render()
     {
         return(
-            <div className="skill">
-            <section id="Skills"><h2 className="section__title">Skills</h2></section>
+            <div id="Skills" className="skill">
+            <section><h2 className="section__title">Skills</h2>
             <div className="skill__img">{this.state.skills.map((skill,index)=>{
                 return  <img src={skill} className="skill__img--pic" key={index} alt={skill}/>
                     }
                 )
             }
        </div> 
+       </section>
        </div>)
     }
 }

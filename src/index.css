@@ -61,7 +61,6 @@ body {
           align-items: center;
   text-align: center;
   width: 100%;
-  min-width: 900px;
   font-size: 1rem;
 }
 
@@ -236,10 +235,6 @@ a {
   border: none;
 }
 
-#Skills {
-  padding-top: 3em;
-}
-
 .skill {
   width: 94%;
   background-color: #FBFBFB;
@@ -280,6 +275,10 @@ a {
 
 .skill__h1 a {
   color: black;
+}
+
+.skill section {
+  padding-top: .5em;
 }
 
 @media (max-device-width: 500px) {

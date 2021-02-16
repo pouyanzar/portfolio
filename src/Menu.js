@@ -7,18 +7,12 @@ export default class Menu extends Component{
         menus: ["About Me", "Skills","Projects",  "Contact Me"]
     }
 
-//    menuBuilder = this.menuBuilder.bind(); 
-
    
-    render(){
-
-        // const menuBuilder = () => {
-            
+    render(){            
         
         return (
            <section className="header" >
                <div className="menu" id="Menu">
-                   <a href="https://www.pouyanz.com">Home</a>
                    {this.state.menus.map((menu,index)=>{
                     let anchor = `#${menu}`.replace(/\s/g,'');
                     return(
