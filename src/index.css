@@ -239,7 +239,7 @@ a {
 .skill {
   width: 94%;
   background-color: #FBFBFB;
-  padding: 20px 0;
+  margin-top: 1rem;
 }
 
 .skill__img {
@@ -276,10 +276,6 @@ a {
 
 .skill__h2 a {
   color: black;
-}
-
-.skill section {
-  padding-top: .5rem;
 }
 
 @media (max-device-width: 500px) {
