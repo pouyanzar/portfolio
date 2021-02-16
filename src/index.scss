@@ -106,10 +106,10 @@ li{
     border: none;
   }
 
-  &__h1{
+  &__h2{
     color: $defaultColor;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1.35;
   }
 
@@ -223,9 +223,9 @@ a {
   width: 94%;
   background-color: #FBFBFB;
   padding: 20px 0;
+
   &__img{
-  // display:flex;
-  // flex-direction: row;
+  
   @include hflex();
   justify-content: space-between;
   align-items:center;
@@ -237,7 +237,7 @@ a {
       padding:0 1rem 0 1rem;
     }
   }
-  &__h1{    
+  &__h2{    
     font-weight: 300;
     font-size: 40px;
     line-height: 1.35;
@@ -246,9 +246,9 @@ a {
     color: $defaultColor;
     }
   }
-
   & section{
-    padding-top: .5em;
+    padding-top: .5rem;
+
   }
 }
 
@@ -276,11 +276,9 @@ a {
   }
  
   .profile1{
-    // flex-direction:column;
-    // justify-content: center;
-    // align-items: center;
     @include vflex();
   }
+
   .li1{
    margin:0 0 1em 0;
   }
@@ -293,10 +291,10 @@ a {
       text-align: center;
     }
     
-    &__h1{
+    &__h2{
       margin: 10px;
       font-weight: 300;
-      font-size: 40px;
+      font-size: 48px;
       line-height: 1.35;
     }
    

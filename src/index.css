@@ -127,10 +127,10 @@ li:last-child {
   border: none;
 }
 
-.projects__h1 {
+.projects__h2 {
   color: black;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1.35;
 }
 
@@ -267,19 +267,19 @@ a {
   padding: 0 1rem 0 1rem;
 }
 
-.skill__h1 {
+.skill__h2 {
   font-weight: 300;
   font-size: 40px;
   line-height: 1.35;
   margin: 2.5em 0;
 }
 
-.skill__h1 a {
+.skill__h2 a {
   color: black;
 }
 
 .skill section {
-  padding-top: .5em;
+  padding-top: .5rem;
 }
 
 @media (max-device-width: 500px) {
@@ -322,10 +322,10 @@ a {
     font-size: 0.9rem;
     text-align: center;
   }
-  .projects__h1 {
+  .projects__h2 {
     margin: 10px;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 48px;
     line-height: 1.35;
   }
   .projects__p {
