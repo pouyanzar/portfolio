@@ -23,8 +23,6 @@ h2.section__title{
   height: 9vh;
 }
 .menu{
-  // display: flex;
-  // flex-direction: row;
   @include hflex();
   justify-content: space-around;
   align-items: center;
@@ -33,14 +31,16 @@ h2.section__title{
   position: fixed;
   width: 100%;
   padding: 1.1rem 0;
-  height: auto;
   font-size: 1.2rem;
   a{
   color: aliceblue;
   text-decoration: none;  
-  }  
+  } 
+  &__button{
+    display: none;
+  } 
 }
-  
+
 body{
   background-color:#FFFFFF;
   margin:0;
@@ -249,12 +249,43 @@ a {
 
 
 @media (max-device-width:500px){
-  .menu {  
-    a{
-      font-size: 1rem;
+  .menu { 
+    justify-content: left;
+    padding-left: 2em;
+    &__link{
+      display: none;
+    }
+    &__button{ 
+      display: inline-block;
+      cursor: pointer;
+      &--bar{
+        width: 35px;
+        height: 5px;
+        background-color: #ffffff;
+        margin: 6px 0;
+      }
     }
   }
 
+  .modal{
+    padding-top: 1em;
+    width: 100%;
+    min-height: 100vh;
+    @include vflex();
+    background-color: rgba(0, 0, 0, .9);
+    p{
+      color: #ffffff;
+      text-align: left;
+      padding-left: 2rem;
+      padding-top: 2rem;
+    }
+    a{
+      color: #ffffff;
+      text-decoration: none; 
+      display: block; 
+      margin-top: 2em;
+      } 
+  }
   h1{
     font-weight: 300;
     font-size: 40px;
