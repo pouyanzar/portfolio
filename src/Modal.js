@@ -1,5 +1,4 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default function Modal({hide, display}) {
     const menus = ["About Me", "Skills","Projects",  "Contact Me"];
@@ -11,7 +10,7 @@ export default function Modal({hide, display}) {
             {menus.map((menu,index)=>{
                 let anchor = `#${menu}`.replace(/\s/g,'');
                 return(
-                     <AnchorLink href={anchor} key={index} onClick={() => hide()}>{menu}</AnchorLink>
+                     <a href={anchor} key={index} onClick={() => hide()}>{menu}</a>
                 )
             })}
            
