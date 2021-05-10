@@ -1,25 +1,22 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Projectviewer extends Component{
+function Projectviewer({projects}){
 
-    render(){
-        const {projects} = this.props;
-        return(
-            projects.map((project,index)=>{
-                return(
-                    <div className="projects" key={index}>
-                        <h2 className="projects__h2">{project.name}</h2>
-                        <p className="projects__p">{project.desc}</p>
-                        <div className="Projects__ImgWrapper">
-                            <img className="projects__img" src={project.pic} alt={project.name}/>
-                        </div>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer"><button className="projects__button" type="button" value="View">View</button></a>
-                        <p className="divider"></p>
+    return(
+        projects.map((project,index)=>{
+            return(
+                <div className="projects" key={index}>
+                    <h2 className="projects__h2">{project.name}</h2>
+                    <p className="projects__p">{project.desc}</p>
+                    <div className="Projects__ImgWrapper">
+                        <img className="projects__img" src={project.pic} alt={project.name}/>
                     </div>
-                )
-            })
-        )
-    }
+                    <a href={project.link} target="_blank" rel="noopener noreferrer"><button className="projects__button" type="button" value="View">View</button></a>
+                    <p className="divider"></p>
+                </div>
+            )
+        })
+    )
 }
 
 export default Projectviewer;
