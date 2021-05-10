@@ -1,9 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class Skills extends Component{
+export default function Skills(){
 
-    state={
-        skills:[
+    const skills = [
             "/pic/html51.svg",
             "/pic/css3.svg",
             "/pic/sass.svg",
@@ -14,19 +13,14 @@ export default class Skills extends Component{
             "/pic/github.svg",
             "/pic/jira.svg"
         ]
-    }
 
-    render()
-    {
-        return(
-            <div id="Skills" className="skill">
-            <section>
-                <h2 className="section__title">Skills</h2>
-                <div className="skill__img">{this.state.skills.map((skill,index)=>{
-                    return  <img src={skill} className="skill__img--pic" key={index} alt={skill}/>
-                    })}
-                </div> 
-            </section>
-            </div>)
-    }
+    return(
+        <section id="Skills" className="skill">
+            <h2 className="section__title">Skills</h2>
+            <div className="skill__img">{skills.map((skill,index)=>{
+                return  <img src={skill} className="skill__img--pic" key={index} alt={skill}/>
+                })}
+            </div> 
+        </section>
+    )
 }
