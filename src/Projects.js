@@ -1,9 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Projectviewer from './Projectviewer';
 
-class Projects extends Component{
-    state = {
-        projects:[
+function Projects(){
+    const projects = [
             {
                 name:"ToDoList",
                 desc:"Responsive ToDoList app using React Hooks and Bootstrap",
@@ -41,23 +40,14 @@ class Projects extends Component{
                     link:"https://bitbucket.org/Pou6858/capstone/src/master/",
                     pic:"/pic/qfpSC.png" 
             }
-
         ]
-    }
 
-    
-    render(){
-
-        const {projects} = this.state;
-        return(
-            <div>
-                <section id="Projects"><h2 className="section__title">Projects</h2></section>
-                <p></p>
-                <Projectviewer projects={projects} />
-
-            </div>
-        )
-    }
+    return(
+            <section id="Projects"><h2 className="section__title">Projects</h2>
+            <p></p>
+            <Projectviewer projects={projects} />
+            </section>
+    )
 }
 
 export default Projects;
