@@ -13,7 +13,7 @@ class Aboutme extends Component{
                     <div className="profile1">
                         <img className="profile1__pic" src="/pic/pouyan.jpg" alt="Pouyan Zarbafian"/>
                     </div>
-                        <p className="about__p">I am Pouyan Zarbafian, a graduate of BrainStation Full Stack Web Development Boot Camp(Fall 2018),<br/> where I learned and deepened my understanding of the latest web development tools and skills.</p>
+                        <p className="about__p">I am Pouyan Zarbafian, a Computer Science graduate from Concordia Universiry, and a graduate of BrainStation College Full Stack Web Development Boot Camp(Fall 2018),<br/> where I learned and deepened my understanding of the latest web development tools and skills.</p>
                         <a className="button" href="/pouyan-zarbafian.pdf" download="Pouyan-Zarbafian-resume">Download my resume</a>
                     </div>
                 </section>
