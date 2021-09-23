@@ -37,7 +37,7 @@ function Projects(){
             {
                     name:"QFP",
                     desc:"MySQL, Node.js, React have been used to build a online store for truck parts.",
-                    link:"https://github.com/pouyanzar/qfp.git",
+                    link:"https://github.com/pouyanzar/qfp",
                     pic:"/pic/qfpSC.png" 
             }
         ]
