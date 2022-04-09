@@ -9,9 +9,9 @@ export default function Menu({show}){
            <section className="header" id="header">
                <div className="menu">
                 <a href="#header" className="menu__button" onClick={() => show()}>
-                    <div class="menu__button--bar"></div>
-                    <div class="menu__button--bar"></div>
-                    <div class="menu__button--bar"></div>
+                    <div className="menu__button--bar"></div>
+                    <div className="menu__button--bar"></div>
+                    <div className="menu__button--bar"></div>
                 </a>
                 {menus.map((menu,index)=>{
                 let anchor = `#${menu}`.replace(/\s/g,'');
