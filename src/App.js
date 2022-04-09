@@ -21,7 +21,7 @@ function App() {
       <Modal hide={hide} display={display} />
       <Aboutme />
       <BackToTop showAt={100} speed={1500} easing="easeInOutQuint">
-        <img src="/pic/top.jpg" className="top" alt="top-button" />
+        ⬆️
       </BackToTop>
       <Skills />
       <Projects />
