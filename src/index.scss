@@ -103,12 +103,10 @@ li {
 #Projects {
   color: $defaultColor;
   background-color: $backgroundColor;
-  // padding: 3em 9.45em;
   margin: 0.5rem 1rem;
 }
 
 .projects {
-  // max-width: 900px;
   border-bottom: darkgray 2px ridge;
   &:last-child {
     border: none;
@@ -159,9 +157,6 @@ li {
 }
 
 .about {
-  // margin: 0 10em;
-  width: 100%;
-  min-height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   -webkit-justify-content: flex-end;
@@ -181,7 +176,7 @@ li {
   min-width: 400px;
   margin: 0.5rem 1rem;
   background: $backgroundColor;
-  padding: 2rem 0 6rem 0;
+  padding: 3rem 0;
 }
 
 a {
@@ -223,10 +218,9 @@ a {
 }
 
 .skill {
-  min-width: 350px;
+  width: 97.5vw;
+  min-width: 400px;
   background-color: $backgroundColor;
-  margin: 0.2rem 1rem;
-  padding: 0 1.2rem;
   &__img {
     @include hflex();
     justify-content: space-between;
@@ -235,8 +229,7 @@ a {
     &--pic {
       width: 100px;
       height: 100px;
-      margin-bottom: 5em;
-      padding: 0 1rem 0 1rem;
+      margin-bottom: 5rem;
     }
   }
   &__h2 {
