@@ -240,7 +240,7 @@ a {
 }
 
 .skill {
-  margin: 0 1rem;
+  width: 96.5vw;
   min-width: 400px;
   background-color: #d1e9ef;
 }
