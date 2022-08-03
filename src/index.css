@@ -121,6 +121,7 @@ li:last-child {
   color: black;
   background-color: #d1e9ef;
   margin: 0.5rem 1rem;
+  width: 97vw;
 }
 
 .projects {
@@ -194,6 +195,7 @@ li:last-child {
   margin: 0.5rem 1rem;
   background: #d1e9ef;
   padding: 3rem 0;
+  width: 97vw;
 }
 
 a {
@@ -240,8 +242,9 @@ a {
 }
 
 .skill {
-  width: 96.5vw;
+  margin: 0 1rem;
   min-width: 400px;
+  width: 97vw;
   background-color: #d1e9ef;
 }
 
@@ -253,6 +256,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0 1rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
