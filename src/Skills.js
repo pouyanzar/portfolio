@@ -9,12 +9,13 @@ export default function Skills() {
     "/pic/react.png",
     "/pic/npm.svg",
     "/pic/nodejs3.svg",
-    "/pic/github.svg",
-    "/pic/jira.svg",
     "/pic/sql.png",
     "/pic/mysql.png",
     "/pic/mongodb.png",
     "/pic/postgresql.png",
+    "/pic/mocha_chai.png",
+    "pic/storybook.png",
+    "pic/cypress.webp",
   ];
 
   return (
