@@ -7,6 +7,23 @@ $buttonColorHover: #70b1eb;
 $backgroundColor: #d1e9ef;
 $divWidth: 97vw;
 
+@keyframes slideIn {
+  0% {
+    transform: translate(-500%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes slideCenter {
+  0% {
+    transform: translate(500%);
+  }
+  100% {
+    transform: tanslate(0);
+  }
+}
 @mixin vflex {
   display: flex;
   flex-direction: column;
@@ -17,6 +34,10 @@ $divWidth: 97vw;
 @mixin hflex {
   display: flex;
   flex-direction: row;
+}
+
+.animate {
+  animation: 3s ease-out 0s 1 slideIn;
 }
 h2.section__title {
   font-weight: 300;
@@ -98,6 +119,7 @@ li {
     object-fit: cover;
     width: 250px;
     height: 250px;
+    animation: 2s ease-out 0s 1 slideIn;
   }
 }
 
@@ -170,6 +192,7 @@ li {
     padding: 0.5rem;
     font-size: 1.5rem;
     font-family: "Beau Rivage", cursive;
+    animation: 2s ease-out 0s 1 slideCenter;
   }
 }
 
@@ -231,11 +254,20 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    animation: 5s ease-out 0s 1 slideIn;
     &--pic {
       width: 100px;
       height: 100px;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
       object-fit: contain;
+      border: 5px solid $buttonColor;
+      border-radius: 25%;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+
+      &:hover {
+        transform: translate(5px, 5px);
+      }
     }
   }
   &__h2 {
@@ -368,5 +400,15 @@ a {
   }
   li {
     margin-left: 8em;
+  }
+}
+
+@media (max-device-width: 2000px) {
+  .skill {
+    &__img {
+      &--pic {
+        margin: 1.5rem;
+      }
+    }
   }
 }

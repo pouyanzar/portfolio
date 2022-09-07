@@ -1,3 +1,40 @@
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translate(-500%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translate(-500%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes slideCenter {
+  0% {
+    transform: translate(500%);
+  }
+  100% {
+    transform: tanslate(0);
+  }
+}
+@keyframes slideCenter {
+  0% {
+    transform: translate(500%);
+  }
+  100% {
+    transform: tanslate(0);
+  }
+}
+.animate {
+  -webkit-animation: 3s ease-out 0s 1 slideIn;
+          animation: 3s ease-out 0s 1 slideIn;
+}
+
 h2.section__title {
   font-weight: 300;
   font-size: 40px;
@@ -13,18 +50,10 @@ h2.section__title {
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
   height: auto;
   position: fixed;
@@ -32,12 +61,10 @@ h2.section__title {
   padding: 1.1rem 0;
   font-size: 1.2rem;
 }
-
 .menu a {
   color: #85bdee;
   text-decoration: none;
 }
-
 .menu__button {
   display: none;
 }
@@ -50,19 +77,10 @@ body {
 }
 
 .App {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 100%;
   min-width: 900px;
@@ -78,11 +96,9 @@ li {
   margin-left: 18em;
   margin-bottom: 0.5em;
 }
-
 li:first-child {
   margin-top: 2em;
 }
-
 li:last-child {
   margin-bottom: 2em;
 }
@@ -91,30 +107,23 @@ li:last-child {
   text-align: left;
   margin-left: 2em;
 }
-
 .li1:first-child {
   margin-top: 2em;
 }
 
 .profile1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
-
 .profile1__pic {
   border-radius: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   width: 250px;
   height: 250px;
+  -webkit-animation: 2s ease-out 0s 1 slideIn;
+          animation: 2s ease-out 0s 1 slideIn;
 }
 
 #Projects {
@@ -127,11 +136,9 @@ li:last-child {
 .projects {
   border-bottom: darkgray 2px ridge;
 }
-
 .projects:last-child {
   border: none;
 }
-
 .projects__h2 {
   color: darkslateblue;
   font-weight: bold;
@@ -139,23 +146,19 @@ li:last-child {
   line-height: 1.35;
   font-family: "Beau Rivage";
 }
-
 .projects__img {
   width: 50%;
   height: auto;
 }
-
 .projects__ImgWrapper {
   width: 500px;
   height: auto;
   margin: auto;
 }
-
 .projects__p {
   color: darkslateblue;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
-
 .projects__button {
   width: 150px;
   height: 50px;
@@ -167,7 +170,6 @@ li:last-child {
   margin: 0.5em 0 2.5em 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
-
 .projects__button:hover {
   font-weight: bold;
 }
@@ -175,18 +177,17 @@ li:last-child {
 .about {
   background-attachment: fixed;
   background-size: cover;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   color: black;
 }
-
 .about__p {
   color: darkslateblue;
   margin-bottom: 40px;
   padding: 0.5rem;
   font-size: 1.5rem;
   font-family: "Beau Rivage", cursive;
+  -webkit-animation: 2s ease-out 0s 1 slideCenter;
+          animation: 2s ease-out 0s 1 slideCenter;
 }
 
 #AboutMe {
@@ -200,7 +201,7 @@ li:last-child {
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .button {
@@ -210,7 +211,6 @@ a {
   padding: 0.7rem 1rem;
   margin: 17px 0;
 }
-
 .button:hover {
   background: #70b1eb;
 }
@@ -220,15 +220,12 @@ a {
   padding-bottom: 2.5em;
   width: 100%;
 }
-
 .footer a {
   color: ghostwhite;
 }
-
 .footer h2 {
   color: lightgrey;
 }
-
 .footer img {
   width: 50px;
   height: 50px;
@@ -247,50 +244,43 @@ a {
   width: 97vw;
   background-color: #d1e9ef;
 }
-
 .skill__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin: 0 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-animation: 5s ease-out 0s 1 slideIn;
+          animation: 5s ease-out 0s 1 slideIn;
 }
-
 .skill__img--pic {
   width: 100px;
   height: 100px;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   -o-object-fit: contain;
      object-fit: contain;
+  border: 5px solid #0b91b6;
+  border-radius: 25%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
 }
-
+.skill__img--pic:hover {
+  transform: translate(5px, 5px);
+}
 .skill__h2 {
   font-weight: 300;
   font-size: 40px;
   line-height: 1.35;
   margin: 2.5em 0;
 }
-
 .skill__h2 a {
   color: black;
 }
 
 @media (max-device-width: 500px) {
   .menu {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    justify-content: left;
     padding-left: 2em;
   }
   .menu__link {
@@ -310,19 +300,10 @@ a {
     padding-top: 1em;
     width: 100%;
     min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.9);
   }
   .modal p {
@@ -350,19 +331,10 @@ a {
     min-width: 0;
   }
   .profile1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .li1 {
     margin: 0 0 1em 0;
@@ -384,10 +356,7 @@ a {
     padding: 7px;
   }
   .skill__img {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .skill__img--pic {
     width: 150px;
@@ -401,19 +370,10 @@ a {
     margin-bottom: 1em;
   }
   .footer__img {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .about__p {
     font-size: 1rem;
@@ -421,7 +381,6 @@ a {
     font-family: "Beau Rivage", cursive;
   }
 }
-
 @media (max-device-width: 800px) {
   .App {
     font-size: 1.2rem;
@@ -430,4 +389,8 @@ a {
     margin-left: 8em;
   }
 }
-/*# sourceMappingURL=index.css.map */
+@media (max-device-width: 2000px) {
+  .skill__img--pic {
+    margin: 1.5rem;
+  }
+}/*# sourceMappingURL=index.css.map */
