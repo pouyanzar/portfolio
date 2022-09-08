@@ -51,7 +51,7 @@ function Projects() {
   return (
     <section id="Projects">
       <h2 className="section__title">Projects</h2>
-      <p></p>
+      {/* <p></p> */}
       <Projectviewer projects={projects} />
     </section>
   );

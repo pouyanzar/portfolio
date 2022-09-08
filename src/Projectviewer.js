@@ -1,21 +1,18 @@
-import React from "react";
-
 function Projectviewer({ projects }) {
   return projects.map((project, index) => {
     return (
-      <div className="project" key={index} id={project.name}>
-        <h2 className="projects__h2">{project.name}</h2>
-        <p className="projects__p">{project.desc}</p>
-        <div className="Projects__ImgWrapper">
-          <img className="projects__img" src={project.pic} alt={project.name} />
+      <article className="project" key={index} id={project.name}>
+        <h2 className="project__h2">{project.name}</h2>
+        <p className="project__p">{project.desc}</p>
+        <div className="Project__ImgWrapper">
+          <img className="project__img" src={project.pic} alt={project.name} />
         </div>
         <a href={project.link} target="_blank" rel="noopener noreferrer">
-          <button className="projects__button" type="button" value="View">
+          <button className="project__button" type="button" value="View">
             View
           </button>
         </a>
-        <p className="divider"></p>
-      </div>
+      </article>
     );
   });
 }

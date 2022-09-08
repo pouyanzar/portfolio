@@ -24,6 +24,18 @@ $divWidth: 97vw;
     transform: tanslate(0);
   }
 }
+
+@keyframes shakingZoom {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 @mixin vflex {
   display: flex;
   flex-direction: column;
@@ -36,9 +48,6 @@ $divWidth: 97vw;
   flex-direction: row;
 }
 
-.animate {
-  animation: 3s ease-out 0s 1 slideIn;
-}
 h2.section__title {
   font-weight: 300;
   font-size: 40px;
@@ -87,6 +96,9 @@ body {
   font-size: 1rem;
 }
 
+section {
+  border-radius: 25px;
+}
 ul {
   list-style-type: circle;
 }
@@ -125,13 +137,32 @@ li {
 
 #Projects {
   color: $defaultColor;
-  background-color: $backgroundColor;
+  // background-color: $backgroundColor;
   margin: 0.5rem 1rem;
   width: $divWidth;
+
+  & h2 {
+    background-color: $backgroundColor;
+    border-radius: 25px 25px 0 0;
+    margin-bottom: 0;
+    padding-top: 2rem;
+  }
 }
 
-.projects {
-  border-bottom: darkgray 2px ridge;
+.project {
+  border-radius: 25px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  background-color: $backgroundColor;
+  &:hover {
+    img {
+      width: 50%;
+    }
+  }
+
+  &:nth-child(2) {
+    border-radius: 0 0 25px 25px;
+  }
   &:last-child {
     border: none;
   }
@@ -140,13 +171,16 @@ li {
     color: $textColor;
     font-weight: bold;
     font-size: 2rem;
-    line-height: 1.35;
     font-family: "Beau Rivage";
+    line-height: 1.35;
+    margin: 0;
+    padding-top: 1rem;
   }
 
   &__img {
-    width: 50%;
+    width: 40%;
     height: auto;
+    transition: width 1.5s, height 1.5s;
   }
 
   &__ImgWrapper {

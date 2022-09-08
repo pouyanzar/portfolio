@@ -30,11 +30,28 @@
     transform: tanslate(0);
   }
 }
-.animate {
-  -webkit-animation: 3s ease-out 0s 1 slideIn;
-          animation: 3s ease-out 0s 1 slideIn;
+@-webkit-keyframes shakingZoom {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
-
+@keyframes shakingZoom {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 h2.section__title {
   font-weight: 300;
   font-size: 40px;
@@ -87,6 +104,10 @@ body {
   font-size: 1rem;
 }
 
+section {
+  border-radius: 25px;
+}
+
 ul {
   list-style-type: circle;
 }
@@ -128,38 +149,55 @@ li:last-child {
 
 #Projects {
   color: black;
-  background-color: #d1e9ef;
   margin: 0.5rem 1rem;
   width: 97vw;
 }
-
-.projects {
-  border-bottom: darkgray 2px ridge;
+#Projects h2 {
+  background-color: #d1e9ef;
+  border-radius: 25px 25px 0 0;
+  margin-bottom: 0;
+  padding-top: 2rem;
 }
-.projects:last-child {
+
+.project {
+  border-radius: 25px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  background-color: #d1e9ef;
+}
+.project:hover img {
+  width: 50%;
+}
+.project:nth-child(2) {
+  border-radius: 0 0 25px 25px;
+}
+.project:last-child {
   border: none;
 }
-.projects__h2 {
+.project__h2 {
   color: darkslateblue;
   font-weight: bold;
   font-size: 2rem;
-  line-height: 1.35;
   font-family: "Beau Rivage";
+  line-height: 1.35;
+  margin: 0;
+  padding-top: 1rem;
 }
-.projects__img {
-  width: 50%;
+.project__img {
+  width: 40%;
   height: auto;
+  transition: width 1.5s, height 1.5s;
 }
-.projects__ImgWrapper {
+.project__ImgWrapper {
   width: 500px;
   height: auto;
   margin: auto;
 }
-.projects__p {
+.project__p {
   color: darkslateblue;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
-.projects__button {
+.project__button {
   width: 150px;
   height: 50px;
   background-color: #0b91b6;
@@ -170,7 +208,7 @@ li:last-child {
   margin: 0.5em 0 2.5em 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
-.projects__button:hover {
+.project__button:hover {
   font-weight: bold;
 }
 
