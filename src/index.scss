@@ -1,11 +1,9 @@
-$defaultColor: black;
-// $textColor: darkslateblue;
+$defaultColor: rgb(53, 239, 199);
 $textColor: #c0bfc5;
-$titleColor: turquoise;
-$topMenuColor: #85bdee;
+$titleColor: #81cadf;
+$topMenuColor: #05254d;
 $buttonColor: #0b91b6;
 $buttonColorHover: #70b1eb;
-// $backgroundColor: #d1e9ef;
 $backgroundColor: #05254d;
 $divWidth: 97vw;
 
@@ -60,13 +58,13 @@ h2.section__title {
 .header {
   position: relative;
   width: 100%;
-  height: 9vh;
+  height: 8vh;
 }
 .menu {
   @include hflex();
   justify-content: space-around;
   align-items: center;
-  background-color: $defaultColor;
+  background-color: rgb(53 168 239);
   height: auto;
   position: fixed;
   width: 100%;
@@ -82,12 +80,10 @@ h2.section__title {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: $titleColor;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .App {
@@ -139,14 +135,13 @@ li {
 
 #Projects {
   color: $defaultColor;
-  // background-color: $backgroundColor;
-  margin: 0.5rem 1rem;
+  margin: 0rem 1rem;
   width: $divWidth;
 
   & h2 {
     background-color: $backgroundColor;
     border-radius: 25px 25px 0 0;
-    margin-bottom: 0;
+    margin: 0;
     padding-top: 2rem;
   }
 }
@@ -226,8 +221,8 @@ li {
     color: $textColor;
     margin-bottom: 40px;
     padding: 0.5rem;
-    font-size: 1.5rem;
-    font-family: "Beau Rivage", cursive;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
     animation: 2s ease-out 0s 1 slideCenter;
   }
 }
@@ -235,15 +230,16 @@ li {
 #AboutMe {
   text-align: center;
   min-width: 400px;
-  margin: 0.5rem 1rem;
+  margin: 0 1rem;
   background: $backgroundColor;
-  padding: 3rem 0;
+  padding: 2rem 0;
   width: $divWidth;
 }
 
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  margin: auto;
 }
 .button {
   background: $buttonColor;
@@ -257,9 +253,12 @@ a {
 }
 
 .footer {
-  background-color: $defaultColor;
-  padding-bottom: 2.5em;
-  width: 100%;
+  background-color: $backgroundColor;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 2em;
+  width: 97vw;
+  border-radius: 25px;
 
   a {
     color: ghostwhite;
@@ -280,26 +279,27 @@ a {
 }
 
 .skill {
-  margin: 0 1rem;
+  margin: 0.5rem 1rem;
   min-width: 400px;
   width: $divWidth;
   background-color: $backgroundColor;
   &__img {
     @include hflex();
-    margin: 0 1rem;
+    margin: 1rem;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     animation: 5s ease-out 0s 1 slideIn;
+
     &--pic {
       width: 100px;
       height: 100px;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
+      background-color: #efefef;
       object-fit: contain;
       border: 5px solid $buttonColor;
       border-radius: 25%;
       padding: 0.5rem;
-      margin-right: 0.5rem;
 
       &:hover {
         transform: translate(5px, 5px);

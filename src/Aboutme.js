@@ -29,9 +29,9 @@ class Aboutme extends Component {
             </div>
             <p className="about__p">
               I am Pouyan Zarbafian, an alumni of Concordia University in
-              Computer Science, and LightHouse Labs alumni in Web development. I
-              also graduated from BrainStation College as a Full Stack Web
-              Developer in 2018.
+              Computer Science, and LightHouse Labs alumni in Web development.{" "}
+              <br />I also graduated from BrainStation College as a Full Stack
+              Web Developer in 2018.
               <br /> Coding is my passion and I am always open to exploring new
               tools and platforms.
               <br />I love playing chess, BBQing, camping, canoeing, doing

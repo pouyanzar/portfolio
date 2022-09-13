@@ -56,14 +56,14 @@ h2.section__title {
   font-weight: 300;
   font-size: 40px;
   line-height: 1.35;
-  color: turquoise;
+  color: #81cadf;
   font: normal normal bold 35px/1.4em futura-lt-w01-book, sans-serif;
 }
 
 .header {
   position: relative;
   width: 100%;
-  height: 9vh;
+  height: 8vh;
 }
 
 .menu {
@@ -71,7 +71,7 @@ h2.section__title {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: black;
+  background-color: rgb(53, 168, 239);
   height: auto;
   position: fixed;
   width: 100%;
@@ -79,7 +79,7 @@ h2.section__title {
   font-size: 1.2rem;
 }
 .menu a {
-  color: #85bdee;
+  color: #05254d;
   text-decoration: none;
 }
 .menu__button {
@@ -87,10 +87,10 @@ h2.section__title {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #81cadf;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .App {
@@ -148,14 +148,14 @@ li:last-child {
 }
 
 #Projects {
-  color: black;
-  margin: 0.5rem 1rem;
+  color: rgb(53, 239, 199);
+  margin: 0rem 1rem;
   width: 97vw;
 }
 #Projects h2 {
   background-color: #05254d;
   border-radius: 25px 25px 0 0;
-  margin-bottom: 0;
+  margin: 0;
   padding-top: 2rem;
 }
 
@@ -216,14 +216,14 @@ li:last-child {
   background-attachment: fixed;
   background-size: cover;
   justify-content: flex-end;
-  color: black;
+  color: rgb(53, 239, 199);
 }
 .about__p {
   color: #c0bfc5;
   margin-bottom: 40px;
   padding: 0.5rem;
-  font-size: 1.5rem;
-  font-family: "Beau Rivage", cursive;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-animation: 2s ease-out 0s 1 slideCenter;
           animation: 2s ease-out 0s 1 slideCenter;
 }
@@ -231,15 +231,16 @@ li:last-child {
 #AboutMe {
   text-align: center;
   min-width: 400px;
-  margin: 0.5rem 1rem;
+  margin: 0 1rem;
   background: #05254d;
-  padding: 3rem 0;
+  padding: 2rem 0;
   width: 97vw;
 }
 
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  margin: auto;
 }
 
 .button {
@@ -254,9 +255,12 @@ a {
 }
 
 .footer {
-  background-color: black;
-  padding-bottom: 2.5em;
-  width: 100%;
+  background-color: #05254d;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 2em;
+  width: 97vw;
+  border-radius: 25px;
 }
 .footer a {
   color: ghostwhite;
@@ -277,7 +281,7 @@ a {
 }
 
 .skill {
-  margin: 0 1rem;
+  margin: 0.5rem 1rem;
   min-width: 400px;
   width: 97vw;
   background-color: #05254d;
@@ -285,7 +289,7 @@ a {
 .skill__img {
   display: flex;
   flex-direction: row;
-  margin: 0 1rem;
+  margin: 1rem;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -295,13 +299,13 @@ a {
 .skill__img--pic {
   width: 100px;
   height: 100px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  background-color: #efefef;
   -o-object-fit: contain;
      object-fit: contain;
   border: 5px solid #0b91b6;
   border-radius: 25%;
   padding: 0.5rem;
-  margin-right: 0.5rem;
 }
 .skill__img--pic:hover {
   transform: translate(5px, 5px);
@@ -313,7 +317,7 @@ a {
   margin: 2.5em 0;
 }
 .skill__h2 a {
-  color: black;
+  color: rgb(53, 239, 199);
 }
 
 @media (max-device-width: 500px) {
