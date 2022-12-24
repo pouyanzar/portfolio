@@ -381,19 +381,19 @@ a {
   .li1 {
     margin: 0 0 1em 0;
   }
-  .projects__button {
+  .project__button {
     width: 150px;
     height: 50px;
     font-size: 0.9rem;
     margin: 0.5em 2.5em 0;
   }
-  .projects__h2 {
+  .project__h2 {
     margin: 10px;
     font-weight: 300;
     font-size: 48px;
     line-height: 1.35;
   }
-  .projects__p {
+  .project__p {
     font-size: 1rem;
     padding: 7px;
   }
