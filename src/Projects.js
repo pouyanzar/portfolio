@@ -16,6 +16,7 @@ function Projects() {
       name: "ToDoList",
       desc: "Responsive ToDoList app using React Hooks and Bootstrap",
       link: "https://project-todolist-1.netlify.app/",
+      github: "https://github.com/pouyanzar/todolist",
       pic: "/pic/todolist.png",
     },
 
