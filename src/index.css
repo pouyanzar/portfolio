@@ -189,7 +189,7 @@ li:last-child {
   transition: width 1.5s, height 1.5s;
 }
 .project__ImgWrapper {
-  width: 500px;
+  width: 80%;
   height: auto;
   margin: auto;
 }
@@ -205,7 +205,7 @@ li:last-child {
   font-size: 1.1rem;
   border: none;
   border-radius: 50px;
-  margin: 0.5em 0 2.5em 0;
+  margin: 0.5em 2em 2.5em 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .project__button:hover {
