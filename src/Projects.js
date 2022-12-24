@@ -25,7 +25,7 @@ function Projects() {
       name: "BrainFlix",
       desc: "Responsive cloned YouTube using React, Node.js, API functions",
       link: "https://github.com/pouyanzar/brainflix",
-      pic: "/pic/brainflixSC.png",
+      pic: "/pic/branflix.png",
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ function Projects() {
       name: "Inventory",
       desc: "As a member of a collaborative project, a warehouse designed with the possibility of adding, sorting, deleting branches, users, and items. The developers communicated via GitHub and Jira",
       link: "https://inventap.herokuapp.com",
-      pic: "/pic/inventorySC.png",
+      pic: "/pic/inventory.png",
     },
     {
       id: 6,
