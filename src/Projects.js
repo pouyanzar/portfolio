@@ -25,6 +25,7 @@ function Projects() {
       name: "BrainFlix",
       desc: "Responsive cloned YouTube using React, Node.js, API functions",
       link: "https://github.com/pouyanzar/brainflix",
+      github: "https://github.com/pouyanzar/brainflix",
       pic: "/pic/branflix.png",
     },
     {
@@ -32,6 +33,7 @@ function Projects() {
       name: "FoodFinder",
       desc: "Responsive receipe search engine using React, Node.js, edamam website's APIs",
       link: "https://modest-booth-b055ca.netlify.app/",
+      github: "https://github.com/pouyanzar/foodfinder",
       pic: "/pic/receipeSC.png",
     },
     {
@@ -39,6 +41,7 @@ function Projects() {
       name: "Inventory",
       desc: "As a member of a collaborative project, a warehouse designed with the possibility of adding, sorting, deleting branches, users, and items. The developers communicated via GitHub and Jira",
       link: "https://inventap.herokuapp.com",
+      github: "https://github.com/pouyanzar/inventory",
       pic: "/pic/inventory.png",
     },
     {
@@ -46,6 +49,7 @@ function Projects() {
       name: "Finder",
       desc: "MySQL, Node.js, React have been used to build a search engine for truck parts with ability of filtering fields. ",
       link: "https://github.com/pouyanzar/finderapp",
+      github: "https://github.com/pouyanzar/finderapp",
       pic: "/pic/finderSC.png",
     },
     {
@@ -53,6 +57,7 @@ function Projects() {
       name: "QFP",
       desc: "MySQL, Node.js, React have been used to build a online store for truck parts.",
       link: "https://github.com/pouyanzar/qfp",
+      github: "https://github.com/pouyanzar/qfp",
       pic: "/pic/qfpSC.png",
     },
   ];
