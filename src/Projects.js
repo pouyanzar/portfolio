@@ -24,7 +24,7 @@ function Projects() {
       id: 3,
       name: "BrainFlix",
       desc: "Responsive cloned YouTube using React, Node.js, API functions",
-      link: "https://github.com/pouyanzar/brainflix",
+      link: "https://branflix.netlify.app",
       github: "https://github.com/pouyanzar/brainflix",
       pic: "/pic/branflix.png",
     },
