@@ -5,6 +5,14 @@ function Projects() {
   const projects = [
     {
       id: 1,
+      name: "SmartBrain",
+      desc: "Responsive face recognition app using React Hooks, Tachyons, Express server, and Postgres to face recognize in the photos",
+      link: "https://smart.herokuapp.com",
+      github: "https://github.com/pouyanzar/facerecognition",
+      pic: "/pic/smart-brain.png",
+    },
+    {
+      id: 2,
       name: "RoboFriends",
       desc: "Responsive search engine using React Hooks, Tachyons and Redux to filter robots",
       link: "https://pouyanzar.github.io/robofriends",
@@ -12,7 +20,7 @@ function Projects() {
       pic: "/pic/robofriends.png",
     },
     {
-      id: 2,
+      id: 3,
       name: "ToDoList",
       desc: "Responsive ToDoList app using React Hooks and Bootstrap",
       link: "https://project-todolist-1.netlify.app/",
@@ -21,7 +29,7 @@ function Projects() {
     },
 
     {
-      id: 3,
+      id: 4,
       name: "BrainFlix",
       desc: "Responsive cloned YouTube using React, Node.js, API functions",
       link: "https://branflix.netlify.app",
@@ -29,7 +37,7 @@ function Projects() {
       pic: "/pic/branflix.png",
     },
     {
-      id: 4,
+      id: 5,
       name: "FoodFinder",
       desc: "Responsive receipe search engine using React, Node.js, edamam website's APIs",
       link: "https://modest-booth-b055ca.netlify.app/",
@@ -37,7 +45,7 @@ function Projects() {
       pic: "/pic/receipeSC.png",
     },
     {
-      id: 5,
+      id: 6,
       name: "Inventory",
       desc: "As a member of a collaborative project, a warehouse designed with the possibility of adding, sorting, deleting branches, users, and items. The developers communicated via GitHub and Jira",
       link: "https://inv-frontend6858.herokuapp.com",
@@ -45,7 +53,7 @@ function Projects() {
       pic: "/pic/inventory.png",
     },
     {
-      id: 6,
+      id: 7,
       name: "Finder",
       desc: "MySQL, Node.js, React have been used to build a search engine for truck parts with ability of filtering fields. ",
       link: "https://github.com/pouyanzar/finderapp",
@@ -53,7 +61,7 @@ function Projects() {
       pic: "/pic/finderSC.png",
     },
     {
-      id: 7,
+      id: 8,
       name: "QFP",
       desc: "MySQL, Node.js, React have been used to build a online store for truck parts.",
       link: "https://github.com/pouyanzar/qfp",
