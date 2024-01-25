@@ -39,10 +39,10 @@ class Aboutme extends Component {
             </p>
             <a
               className="button"
-              href="/pouyan-zarbafian.pdf"
+              href="https://drive.google.com/file/d/1sAsWtYh5mWT6Xh-SQI8zKtMsgkl7G3l4/view?usp=drive_link"
               download="Pouyan-Zarbafian-resume"
             >
-              Download my resume
+              Resume
             </a>
           </div>
         </section>
