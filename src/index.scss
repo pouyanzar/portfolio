@@ -137,6 +137,7 @@ li {
   color: $defaultColor;
   margin: 0rem 1rem;
   width: $divWidth;
+  min-width: 400px;
 
   & h2 {
     background-color: $backgroundColor;
@@ -151,6 +152,7 @@ li {
   margin-bottom: 0.5rem;
   padding: 0.5rem 0;
   background-color: $backgroundColor;
+
   &:hover {
     img {
       width: 50%;
@@ -201,7 +203,7 @@ li {
     font-size: 1.1rem;
     border: none;
     border-radius: 50px;
-    margin: 0.5em 2em 2.5em 0;
+    margin: 0.5em 0.5em 1.5em 0.5em;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
       "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
       "Helvetica Neue", sans-serif;
@@ -367,7 +369,7 @@ a {
 
   .App {
     font-size: 3rem;
-    min-width: 0;
+    min-width: 400px;
   }
 
   .profile1 {
