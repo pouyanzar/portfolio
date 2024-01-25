@@ -7,7 +7,7 @@ function Projects() {
       id: 1,
       name: "SmartBrain",
       desc: "Responsive face recognition app using React Hooks, Tachyons, Express server, and Postgres to face recognize in the photos",
-      link: "https://smart.herokuapp.com",
+      link: "http://pouyanzar.github.io/facerecognition",
       github: "https://github.com/pouyanzar/facerecognition",
       pic: "/pic/smart-brain.png",
     },
