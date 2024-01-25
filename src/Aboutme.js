@@ -37,7 +37,7 @@ class Aboutme extends Component {
               <br />I love playing chess, BBQing, camping, canoeing, doing
               martial arts, and cooking.
             </p>
-            <a className="button" href="/pouyan-zarbafian.pdf">
+            <a className="button" href="/pouyan-zarbafian.pdf" target="blank">
               Resume
             </a>
           </div>
