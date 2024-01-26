@@ -48,7 +48,7 @@ function Projects() {
       id: 6,
       name: "Inventory",
       desc: "As a member of a collaborative project, a warehouse designed with the possibility of adding, sorting, deleting branches, users, and items. The developers communicated via GitHub and Jira",
-      link: "https://inv-frontend6858.herokuapp.com",
+      link: "https://theinventory.netlify.app",
       github: "https://github.com/pouyanzar/inventory",
       pic: "/pic/inventory.png",
     },
