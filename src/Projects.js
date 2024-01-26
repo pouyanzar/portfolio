@@ -40,7 +40,7 @@ function Projects() {
       id: 5,
       name: "FoodFinder",
       desc: "Responsive receipe search engine using React, Node.js, edamam website's APIs",
-      link: "https://modest-booth-b055ca.netlify.app/",
+      link: "https://receipefinder.netlify.app",
       github: "https://github.com/pouyanzar/foodfinder",
       pic: "/pic/receipeSC.png",
     },
